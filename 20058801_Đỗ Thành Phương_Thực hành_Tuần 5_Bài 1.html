@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20058801_Đỗ Thành Phương</title>
+</head>
+<body>
+    <script>
+        function KiemTraHoTen() {
+            let mauKT = /^([A-Za-z]+)((\s{1}[A-Za-z]+){1,})/;
+            let chuoi = document.getElementById('txtKT').value.trim();
+            if (mauKt.test(chuoi) == true) {
+                spKT.innerText = "Nhap dung";
+            } else {
+                spKT.innerText = "Nhap sai";
+            }
+        }
+    </script>
+    <form action="" method="post" style="width: 500px;">
+        <fieldset>
+            <legend>Nhap chuoi can kiem tra</legend>
+            <label for="lblKT">Chuoi kiem tra</label>
+            <input type="text" name="txtKT" id="txtKT" onblur="return KiemTraHoTen();">
+            <span id="spKT">*</span>
+        </fieldset>
+    </form>
+</body>
+</html>
